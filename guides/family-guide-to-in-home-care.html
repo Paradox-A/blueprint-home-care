@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Family Guide to Choosing In-Home Care | Blueprint Home Care</title>
+  <meta name="description" content="A clear, honest guide for families trying to figure out what a parent needs — how to know it's time, understanding your options, questions to ask any agency, red flags, and what a good first month looks like." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #1B3550;
+      --sage:  #7A9E8A;
+      --cream: #F8F4EE;
+      --tan:   #C4A678;
+      --dark:  #2C2C2C;
+      --mid:   #5A5A5A;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark);
+      background: var(--cream);
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 4rem;
+      background: rgba(27, 53, 80, 0.97);
+      backdrop-filter: blur(8px);
+    }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      background: var(--tan); color: var(--white); border: none; border-radius: 2px;
+      padding: 0.8rem 1.6rem; cursor: pointer;
+    }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.9rem; max-width: 46ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.8rem 3rem 1rem; }
+
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.4rem; }
+    .lede p { margin-bottom: 1.1rem; }
+
+    section.chapter { margin-bottom: 2.6rem; }
+    section.chapter h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 500; color: var(--navy);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--tan);
+    }
+    section.chapter h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem; font-weight: 600; color: var(--sage);
+      letter-spacing: 0.03em;
+      margin: 1.2rem 0 0.4rem;
+    }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.9rem; }
+    section.chapter ul { margin: 0 0 1rem 1.3rem; }
+    section.chapter li { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .qblock { margin-bottom: 1.1rem; }
+    .qblock h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--navy); margin-bottom: 0.4rem;
+    }
+    .qblock ul { margin: 0 0 0 1.3rem; }
+    .qblock li { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.35rem; }
+
+    .redflags {
+      margin: 0 3rem 2.6rem;
+      background: var(--cream);
+      border-left: 3px solid var(--tan);
+      padding: 1.4rem 1.6rem;
+    }
+    .redflags h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.6rem; }
+    .redflags li { font-size: 0.85rem; color: var(--mid); line-height: 1.6; margin-bottom: 0.3rem; margin-left: 1.2rem; }
+    .redflags p.note { font-size: 0.82rem; color: var(--mid); margin-top: 0.8rem; font-style: italic; }
+
+    .steps { display: grid; gap: 1.1rem; }
+    .step { display: flex; gap: 1rem; align-items: baseline; }
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; color: var(--tan); opacity: 0.6; line-height: 1; flex-shrink: 0; width: 2rem;
+    }
+    .step-body h4 { font-size: 0.88rem; font-weight: 600; color: var(--navy); margin-bottom: 0.2rem; }
+    .step-body p { font-size: 0.85rem; color: var(--mid); margin-bottom: 0; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.25rem; color: var(--navy); margin-bottom: 0.8rem; }
+    .guide-closing p { font-size: 0.88rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.84rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    @media print {
+      nav, .toolbar { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .redflags { margin-left: 1.5rem; margin-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>The Family Guide to Choosing In-Home Care</h1>
+      <p>A clear, honest guide for when you're trying to figure out what your parent needs, and you don't want to get this wrong.</p>
+    </div>
+
+    <div class="content">
+      <div class="lede">
+        <p>If you're reading this, someone you love probably needs more support than they're getting right now, and you're the one who noticed. That's not a small thing. Most families don't go looking for this information until something forces the question: a fall, a hospital stay, a diagnosis, or just a quiet, growing worry that things aren't quite right anymore.</p>
+        <p>This guide is not a sales pitch. It's the same information we'd want a friend to have: how to tell it's time, what your real options are, what to ask any agency you're considering, and what a good first month of care actually looks like. If you finish this and decide Blueprint isn't the right fit, that's fine. We'd rather you make an informed choice than a rushed one.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>1. How Do You Know It's Time?</h2>
+        <p>There's rarely one clear signal. More often it's a pattern you've been quietly tracking without naming it. Some of the most common signs families describe:</p>
+        <ul>
+          <li>A fall, even a minor one, or a new unsteadiness getting around the house.</li>
+          <li>A hospital stay or ER visit, especially if it's the second one this year.</li>
+          <li>Missed medications, expired food in the fridge, or bills that suddenly aren't getting paid.</li>
+          <li>A house that's slipping: unopened mail piling up, laundry not getting done, a normally tidy person letting things go.</li>
+          <li>A spouse or partner who is exhausted from trying to manage care alone.</li>
+          <li>A new diagnosis, memory changes, or a doctor gently raising the question of "more support at home."</li>
+        </ul>
+        <p>If two or three of these sound familiar, it's worth having the conversation now, not after the next fall or hospital stay. Acting early usually means more choices, not fewer.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>2. Understanding Your Options</h2>
+        <p>Families usually land in one of a few places. None of these is the "right" answer for everyone; the right one depends on the level of need, the budget, and what the family can realistically sustain.</p>
+        <h3>Family caregiving alone</h3>
+        <p>Works well for lower-need situations, but is hard to sustain long-term, especially alongside a job or young children of your own. Caregiver burnout is real and common.</p>
+        <h3>Private-pay non-medical home care</h3>
+        <p>A caregiver comes to the home for personal care, companionship, safety supervision, and daily support. This does not include skilled nursing or medical treatment. Billed hourly, fully controlled by the family, no eligibility requirements.</p>
+        <h3>Medicaid or JACC-funded home care</h3>
+        <p>For families who qualify financially, some home care hours can be covered through NJ's Medicaid or JACC programs. Availability and hours are more limited than private-pay, and there's usually a waitlist or approval process.</p>
+        <h3>Assisted living or a facility</h3>
+        <p>Makes sense when safety needs exceed what can reasonably be managed at home, or when a person wants more built-in socialization. A bigger transition, and typically a bigger monthly cost than home care.</p>
+        <p>Most families start with private-pay home care because it can begin almost immediately, scale up or down as needs change, and doesn't require anyone to leave their home before they're ready.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>3. Questions to Ask Any Agency (Not Just Us)</h2>
+        <p>This is the single most useful section in this guide. Ask these questions of every agency you're considering, including us. A good agency will answer all of them clearly and without hesitation.</p>
+
+        <div class="qblock">
+          <h4>Licensing &amp; Insurance</h4>
+          <ul>
+            <li>Are you registered as a Health Care Service Firm (HCSF) with the state of New Jersey?</li>
+            <li>Do you carry general liability and professional liability insurance, and a surety bond?</li>
+            <li>Are your caregivers employees, or independent contractors? (This affects who's liable if something goes wrong.)</li>
+          </ul>
+        </div>
+        <div class="qblock">
+          <h4>Caregiver Screening &amp; Training</h4>
+          <ul>
+            <li>What background checks do you run before hiring a caregiver?</li>
+            <li>Are your caregivers CHHA-certified, and how is that verified?</li>
+            <li>How do you train caregivers for memory care or post-hospital recovery specifically?</li>
+          </ul>
+        </div>
+        <div class="qblock">
+          <h4>Matching &amp; Backup Coverage</h4>
+          <ul>
+            <li>How do you match a caregiver to our family, and can we meet them first?</li>
+            <li>What happens if our regular caregiver is sick or unavailable? Is there a backup plan, or does the shift just get missed?</li>
+          </ul>
+        </div>
+        <div class="qblock">
+          <h4>Care Plan &amp; Communication</h4>
+          <ul>
+            <li>Is there a written care plan, and who reviews and updates it?</li>
+            <li>How will we know how the day went? Daily notes, a call, an app?</li>
+            <li>Who is our point of contact if something comes up?</li>
+          </ul>
+        </div>
+        <div class="qblock">
+          <h4>Cost &amp; Contract</h4>
+          <ul>
+            <li>What is the hourly rate, and is there a minimum number of hours per visit?</li>
+            <li>Are there additional fees for holidays, overnight, or last-minute requests?</li>
+            <li>What is the cancellation policy, and is there a contract we're locked into?</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="redflags">
+        <h3>4. Red Flags to Watch For</h3>
+        <ul>
+          <li>Cash-only payment, or reluctance to put anything in writing.</li>
+          <li>No New Jersey HCSF registration, or vague answers about licensing.</li>
+          <li>No mention of background checks or caregiver credentials.</li>
+          <li>High-pressure sales tactics, especially pushing you to sign the same day.</li>
+          <li>No written care plan, or a caregiver showing up without one.</li>
+          <li>Vague pricing, or a rate that changes after your first conversation.</li>
+        </ul>
+        <p class="note">Any one of these alone isn't necessarily disqualifying, but more than one is a real reason to keep looking.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>5. Understanding the Cost</h2>
+        <p>Private-pay non-medical home care is billed hourly, with the rate depending on the level of care needed (companion care tends to run lower, memory or transitional care higher) and usually a multi-hour visit minimum. Rates and minimums vary by agency, so ask directly &mdash; we're glad to walk through what a plan would look like for your specific situation.</p>
+        <p>A few things that can help with the cost:</p>
+        <ul>
+          <li><strong>VA Aid &amp; Attendance:</strong> a benefit for eligible veterans and surviving spouses that can meaningfully offset monthly care costs. An elder-law or VA-accredited attorney can help determine eligibility.</li>
+          <li><strong>Long-term care insurance:</strong> if your parent has a policy, home care is often a covered benefit; check the elimination period.</li>
+          <li><strong>Private-pay as a bridge:</strong> some families use private-pay home care temporarily while a Medicaid application or spend-down process is underway.</li>
+        </ul>
+      </section>
+
+      <section class="chapter">
+        <h2>6. What a Good First 30 Days Looks Like</h2>
+        <div class="steps">
+          <div class="step"><div class="step-num">01</div><div class="step-body"><h4>Initial consultation</h4><p>A conversation, usually free, to understand your family's situation and needs before anything is proposed.</p></div></div>
+          <div class="step"><div class="step-num">02</div><div class="step-body"><h4>Needs assessment</h4><p>A closer look at daily routines, health considerations, home safety, and what kind of support would actually help.</p></div></div>
+          <div class="step"><div class="step-num">03</div><div class="step-body"><h4>A written care plan</h4><p>Built around your family's specific needs and schedule, not a generic template.</p></div></div>
+          <div class="step"><div class="step-num">04</div><div class="step-body"><h4>Caregiver matching</h4><p>Based on skills, personality, and your family's preferences, with an introduction before care starts.</p></div></div>
+          <div class="step"><div class="step-num">05</div><div class="step-body"><h4>Daily notes &amp; family updates</h4><p>So you know how the day went even if you can't be there.</p></div></div>
+          <div class="step"><div class="step-num">06</div><div class="step-body"><h4>A first check-in</h4><p>Within the first week or two, to confirm the plan is actually working and adjust anything that isn't.</p></div></div>
+        </div>
+      </section>
+
+      <section class="chapter" style="margin-bottom:0;">
+        <h2>7. When You'd Rather Have Help Navigating All of This</h2>
+        <p>Some families read a guide like this and feel ready to start calling agencies. Others would rather talk it through with someone first. Either is fine.</p>
+        <p>If you'd like to talk through your specific situation, no pressure, no obligation, we're glad to help, even if the answer ends up being a resource other than us.</p>
+      </section>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Schedule a private consultation</h3>
+      <p>Talk it through with Andrea, no pressure, no obligation.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

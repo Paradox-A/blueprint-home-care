@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questions to Ask Before You Hire a Home Care Agency | Blueprint Home Care</title>
+  <meta name="description" content="A free checklist to bring to every home care agency conversation, covering licensing, caregiver screening, backup coverage, cost, and red flags to watch for." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #1B3550;
+      --sage:  #7A9E8A;
+      --cream: #F8F4EE;
+      --tan:   #C4A678;
+      --dark:  #2C2C2C;
+      --mid:   #5A5A5A;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark);
+      background: var(--cream);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 4rem;
+      background: rgba(27, 53, 80, 0.97);
+      backdrop-filter: blur(8px);
+    }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 880px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      background: var(--tan); color: var(--white); border: none; border-radius: 2px;
+      padding: 0.8rem 1.6rem; cursor: pointer;
+    }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+
+    .guide-header { background: var(--navy); color: var(--white); padding: 3rem 3rem 2.6rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 0.9rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.9rem; max-width: 48ch; margin: 0 auto; font-style: italic; }
+
+    .content { padding: 2.4rem 3rem 1rem; }
+
+    .qgroup { margin-bottom: 2.2rem; }
+    .qgroup h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem; font-weight: 500; color: var(--navy);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--tan);
+    }
+    .qrow {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: 1.5rem;
+      align-items: start;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #E8E2D9;
+    }
+    .qrow:last-child { border-bottom: none; }
+    .qrow .q { font-size: 0.9rem; color: var(--dark); line-height: 1.5; }
+    .qrow .notes {
+      border: 1px solid #DDD8CF;
+      border-radius: 2px;
+      min-height: 2.6rem;
+      background: var(--cream);
+    }
+
+    .redflags {
+      margin: 0 3rem 2rem;
+      background: var(--cream);
+      border-left: 3px solid var(--tan);
+      padding: 1.4rem 1.6rem;
+    }
+    .redflags h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.6rem; }
+    .redflags p { font-size: 0.85rem; color: var(--mid); line-height: 1.7; }
+
+    .guide-closing { background: var(--cream); padding: 2rem 3rem 2.6rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.86rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.82rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    @media print {
+      nav, .toolbar { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      .qrow { break-inside: avoid; }
+      @page { size: letter; margin: 0.4in; }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .redflags { margin-left: 1.5rem; margin-right: 1.5rem; }
+      .qrow { grid-template-columns: 1fr; }
+      .qrow .notes { min-height: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Questions to Ask Before You Hire a Home Care Agency</h1>
+      <p>Bring this to every conversation. A good agency will answer all of it without hesitation.</p>
+    </div>
+
+    <div class="content">
+      <div class="qgroup">
+        <h2>Licensing &amp; Insurance</h2>
+        <div class="qrow"><div class="q">Are you registered as a Health Care Service Firm (HCSF) with the state of New Jersey?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">Do you carry general liability and professional liability insurance, and a surety bond?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">Are your caregivers employees, or independent contractors?</div><div class="notes"></div></div>
+      </div>
+
+      <div class="qgroup">
+        <h2>Caregiver Screening &amp; Training</h2>
+        <div class="qrow"><div class="q">What background checks do you run before hiring a caregiver?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">Are your caregivers CHHA-certified, and how is that verified?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">How do you train caregivers for memory care or post-hospital recovery specifically?</div><div class="notes"></div></div>
+      </div>
+
+      <div class="qgroup">
+        <h2>Matching &amp; Backup Coverage</h2>
+        <div class="qrow"><div class="q">How do you match a caregiver to our family, and can we meet them first?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">What happens if our regular caregiver is sick or unavailable?</div><div class="notes"></div></div>
+      </div>
+
+      <div class="qgroup">
+        <h2>Care Plan &amp; Communication</h2>
+        <div class="qrow"><div class="q">Is there a written care plan, and who reviews and updates it?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">How will we know how the day went?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">Who is our point of contact if something comes up?</div><div class="notes"></div></div>
+      </div>
+
+      <div class="qgroup">
+        <h2>Cost &amp; Contract</h2>
+        <div class="qrow"><div class="q">What is the hourly rate, and is there a minimum number of hours per visit?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">Are there additional fees for holidays, overnight, or last-minute requests?</div><div class="notes"></div></div>
+        <div class="qrow"><div class="q">What is the cancellation policy, and is there a contract we're locked into?</div><div class="notes"></div></div>
+      </div>
+    </div>
+
+    <div class="redflags">
+      <h3>Red Flags</h3>
+      <p>Cash-only payment, no state registration, no background checks, high-pressure sign-today tactics, no written care plan, or pricing that changes after the first call. Any one of these is worth a second look; more than one is worth walking away.</p>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Want a second opinion, or just want to talk it through?</h3>
+      <p>We're glad to help you think it through, even if the answer ends up being a resource other than us.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
