@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fall &amp; Home Safety Checklist | Blueprint Home Care</title>
+  <meta name="description" content="A free, room-by-room fall-prevention checklist for older adults, adapted from the CDC's STEADI program. From Blueprint Home Care, Northern & Central New Jersey." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #1B3550;
+      --sage:  #7A9E8A;
+      --cream: #F8F4EE;
+      --tan:   #C4A678;
+      --dark:  #2C2C2C;
+      --mid:   #5A5A5A;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark);
+      background: var(--cream);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 4rem;
+      background: rgba(27, 53, 80, 0.97);
+      backdrop-filter: blur(8px);
+    }
+
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+
+    .nav-back {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .nav-back:hover { color: var(--tan); }
+
+    .no-print { }
+
+    main { max-width: 880px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1.5rem;
+    }
+
+    .print-btn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--tan);
+      color: var(--white);
+      border: none;
+      border-radius: 2px;
+      padding: 0.8rem 1.6rem;
+      cursor: pointer;
+    }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet {
+      background: var(--white);
+      border-radius: 2px;
+      box-shadow: 0 12px 32px rgba(27,53,80,0.1);
+      overflow: hidden;
+    }
+
+    .guide-header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 3rem 3rem 2.6rem;
+      text-align: center;
+    }
+
+    .guide-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--tan);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .guide-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      line-height: 1.2;
+      margin-bottom: 0.9rem;
+    }
+
+    .guide-header p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+      max-width: 46ch;
+      margin: 0 auto;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1px;
+      background: #E8E2D9;
+      border-bottom: 1px solid #E8E2D9;
+    }
+    .stat {
+      background: var(--white);
+      padding: 1.4rem 1.2rem;
+      text-align: center;
+    }
+    .stat .num {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 1.9rem;
+      color: var(--navy);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .stat .label { font-size: 0.72rem; color: var(--mid); line-height: 1.4; }
+
+    .source-line {
+      font-size: 0.7rem;
+      color: var(--mid);
+      text-align: center;
+      padding: 0.8rem 2rem 0;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid #E8E2D9;
+      margin-top: 1.5rem;
+    }
+    .room {
+      padding: 1.8rem 2.2rem;
+      border-bottom: 1px solid #E8E2D9;
+    }
+    .room:nth-child(odd) { border-right: 1px solid #E8E2D9; }
+    .room h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 1.1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--tan);
+      display: inline-block;
+    }
+    .item { margin-bottom: 1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .item .q {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-weight: 400;
+      font-size: 0.88rem;
+      color: var(--dark);
+      line-height: 1.4;
+      margin-bottom: 0.25rem;
+    }
+    .item .box {
+      width: 13px;
+      height: 13px;
+      border: 1.5px solid var(--navy);
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .item .fix {
+      font-size: 0.8rem;
+      color: var(--mid);
+      line-height: 1.5;
+      padding-left: 1.2rem;
+    }
+
+    .guide-closing {
+      background: var(--cream);
+      padding: 2.4rem 3rem 2.6rem;
+      border-top: 1px solid #E8E2D9;
+    }
+    .guide-closing h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 0.7rem;
+    }
+    .guide-closing p {
+      font-size: 0.86rem;
+      color: var(--mid);
+      line-height: 1.8;
+      max-width: 62ch;
+      margin-bottom: 1rem;
+    }
+    .guide-closing .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.5rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--navy);
+      margin-top: 0.6rem;
+    }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert {
+      font-size: 0.7rem;
+      color: var(--mid);
+      margin-top: 0.9rem;
+      font-style: italic;
+    }
+
+    .footer-source {
+      text-align: center;
+      font-size: 0.7rem;
+      color: var(--mid);
+      padding: 1.2rem 2rem 0;
+    }
+    .footer-source a { color: var(--mid); }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      @page { size: letter; margin: 0.4in; }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .checklist-grid { grid-template-columns: 1fr; }
+      .room:nth-child(odd) { border-right: none; }
+      .guide-header, .guide-closing { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../index.html#hero" class="nav-back">&larr; Back to Blueprint Home Care</a>
+</nav>
+
+<main>
+  <div class="toolbar no-print">
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Aging Safely at Home: A Fall &amp; Home-Safety Checklist</h1>
+      <p>A room-by-room walkthrough to spot hazards before they cause a fall &mdash; adapted from the CDC's STEADI program.</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><span class="num">1 in 4</span><span class="label">adults 65+ falls every year &mdash; over 14 million people</span></div>
+      <div class="stat"><span class="num">~3M</span><span class="label">ER visits for falls each year</span></div>
+      <div class="stat"><span class="num">41,400</span><span class="label">fall-related deaths in 2023</span></div>
+      <div class="stat"><span class="num">&lt;50%</span><span class="label">of people who fall tell their doctor</span></div>
+    </div>
+    <p class="source-line">Source: CDC, STEADI (Stopping Elderly Accidents, Deaths &amp; Injuries) program, cdc.gov/falls.</p>
+
+    <div class="checklist-grid">
+      <div class="room">
+        <h2>Stairs &amp; Steps (Indoors &amp; Outdoors)</h2>
+        <div class="item"><div class="q"><span class="box"></span>Are there papers, shoes, books, or other objects on the stairs?</div><div class="fix">Always keep objects off the stairs.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Are some steps broken or uneven?</div><div class="fix">Fix loose or uneven steps.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Is there a light and light switch at the top and bottom of the stairs?</div><div class="fix">Have an electrician add an overhead light and switch at both ends &mdash; glow switches are available.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Has a stairway light bulb burned out?</div><div class="fix">Have a friend or family member change the bulb.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Is the carpet on the steps loose or torn?</div><div class="fix">Attach it firmly to every step, or remove it and add non-slip rubber treads.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Are the handrails loose or broken, or only on one side?</div><div class="fix">Fix or replace them. Handrails should run the full length of the stairs, on both sides.</div></div>
+      </div>
+
+      <div class="room">
+        <h2>Floors</h2>
+        <div class="item"><div class="q"><span class="box"></span>Do you have to walk around furniture to cross a room?</div><div class="fix">Ask someone to move furniture so the path is clear.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Do you have throw rugs on the floor?</div><div class="fix">Remove them, or secure them with double-sided tape or a non-slip backing.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Are there papers, shoes, books, or other objects on the floor?</div><div class="fix">Pick them up. Keep the floor clear as a habit.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Do you have to step over or around wires or cords?</div><div class="fix">Coil or tape cords against the wall. Ask an electrician about adding an outlet if needed.</div></div>
+      </div>
+
+      <div class="room">
+        <h2>Kitchen</h2>
+        <div class="item"><div class="q"><span class="box"></span>Are the things you use often stored on high shelves?</div><div class="fix">Move frequently used items to lower shelves, about waist height.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Is your step stool sturdy?</div><div class="fix">Use a stool with a bar to hold onto &mdash; never a chair.</div></div>
+      </div>
+
+      <div class="room">
+        <h2>Bedrooms</h2>
+        <div class="item"><div class="q"><span class="box"></span>Is the light near the bed hard to reach?</div><div class="fix">Place a lamp within easy reach of the bed.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Is the path from the bed to the bathroom dark?</div><div class="fix">Add a nightlight, ideally one that turns on automatically after dark.</div></div>
+      </div>
+
+      <div class="room">
+        <h2>Bathrooms</h2>
+        <div class="item"><div class="q"><span class="box"></span>Is the tub or shower floor slippery?</div><div class="fix">Add a non-slip rubber mat or self-stick strips.</div></div>
+        <div class="item"><div class="q"><span class="box"></span>Do you need support getting in/out of the tub or up from the toilet?</div><div class="fix">Have grab bars installed next to and inside the tub, and next to the toilet.</div></div>
+      </div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>If you'd like a second set of eyes</h3>
+      <p>We know how overwhelming it can feel to think about a parent or loved one living alone &mdash; even a checklist this short can raise more questions than it answers. Blueprint Home Care is a locally owned, Morris County-based home care agency. We're not able to offer medical advice, but if you'd like to talk through what extra support at home could look like for your family, we're a phone call away.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="../index.html#contact">blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source no-print">Checklist content adapted from the CDC's STEADI &ldquo;Check for Safety: A Home Fall Prevention Checklist for Older Adults&rdquo; &mdash; <a href="https://www.cdc.gov/steadi/pdf/steadi-brochure-checkforsafety-508.pdf">cdc.gov/steadi</a>. Public domain federal resource, reproduced with attribution.</p>
+</main>
+
+</body>
+</html>
