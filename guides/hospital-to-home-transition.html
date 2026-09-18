@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planning for a Safe Hospital-to-Home Transition | Blueprint Home Care</title>
+  <meta name="description" content="Your discharge rights under Medicare and the New Jersey CARE Act, plus a before-you-leave checklist and a 72-hour home plan." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .check-list { margin: 0 0 1.4rem; }
+    .check-item { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.88rem; color: var(--dark); margin-bottom: 0.6rem; }
+    .check-item .box { width: 13px; height: 13px; border: 1.5px solid var(--navy); border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
+
+    .appeal-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1.2rem 0; }
+    .appeal-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.6rem; }
+    .appeal-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0; }
+    .appeal-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Planning for a Safe Hospital-to-Home Transition</h1>
+      <p>The care is usually fine. The handoff is what fails. Keep this page in the hospital bag.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">Your rights, the two notices to find and keep, and a checklist for the first 72 hours home &mdash; the phone number in this guide is the one families wish they'd had.</p>
+
+      <section class="chapter">
+        <h2>Two Notices to Find and Keep</h2>
+        <h3>Important Message from Medicare</h3>
+        <p>Every inpatient gets it within two days of admission, and again before discharge. It states your right to medically necessary care, to be involved in decisions, and to appeal. The appeal instructions are printed on it.</p>
+        <h3>Medicare Outpatient Observation Notice</h3>
+        <p>If you are under observation rather than admitted, the hospital must give you this in writing within 36 hours and explain it out loud.</p>
+      </section>
+
+      <div class="callout">
+        <span class="tag">Ask on day one, then ask again</span>
+        <p>&ldquo;Is he admitted as an inpatient, or under observation?&rdquo; Observation looks identical from the bed &mdash; same room, same gown. But Medicare pays for skilled nursing rehab only after a 3-day <em>inpatient</em> stay, and observation days do not count. Three nights in a hospital bed, then rehab, can arrive as a bill for the entire rehab stay.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>New Jersey's CARE Act &mdash; What the Hospital Owes You</h2>
+        <ul>
+          <li>At admission you must be offered the chance to name a caregiver in the record. Do it.</li>
+          <li>That caregiver must be notified by the time the discharge order is written.</li>
+          <li>The hospital must consult you and issue a written discharge plan that names a specific hospital employee you can call afterward.</li>
+          <li>The hospital must teach you the care tasks &mdash; plain language, with a demonstration and a chance to ask questions.</li>
+        </ul>
+        <div class="quote-box">&ldquo;I am the designated caregiver under the New Jersey CARE Act. Please show me how to do this, and give me the written discharge plan with the name of who I call.&rdquo;</div>
+      </section>
+
+      <section class="chapter">
+        <h2>Before You Leave the Building</h2>
+        <div class="check-list">
+          <div class="check-item"><span class="box"></span>Names and phone numbers to call with questions &mdash; written down</div>
+          <div class="check-item"><span class="box"></span>What complications to watch for, and what to do about each</div>
+          <div class="check-item"><span class="box"></span>What equipment is needed, whether Medicare covers it, and who is arranging delivery</div>
+          <div class="check-item"><span class="box"></span>Written instructions you can actually read, plus a current medication list</div>
+          <div class="check-item"><span class="box"></span>The follow-up appointment already booked &mdash; not from the car</div>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>The 72-Hour Home Plan</h2>
+        <div class="check-list">
+          <div class="check-item"><span class="box"></span>Can he get in? Steps, rails, and a clear path to a bed and bathroom &mdash; one level if possible</div>
+          <div class="check-item"><span class="box"></span>Medications sorted, old bottles physically out of the house</div>
+          <div class="check-item"><span class="box"></span>Food, and someone there. The first 72 hours send people back</div>
+          <div class="check-item"><span class="box"></span>A phone within reach of the bed, and a plan for the first night</div>
+        </div>
+      </section>
+
+      <div class="callout">
+        <span class="tag">The highest-risk moment of the whole process</span>
+        <p>Put every bottle from home on the table next to the new prescriptions and ask which ones he stops. Hospitals start drugs, change doses, and substitute &mdash; but nobody clears the old bottles off the kitchen counter. Doubled doses and duplicate blood thinners are how people get hurt in week one.</p>
+      </div>
+
+      <div class="appeal-box">
+        <h3>If a Discharge Feels Too Early</h3>
+        <p>You can appeal &mdash; free, fast, and you are not billed while it's pending. New Jersey's Medicare discharge appeal organization is <strong>Commence Health</strong>: <a href="tel:8668155440">866-815-5440</a>, TTY 711, available 24 hours.</p>
+      </div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Also ask</h3>
+      <p>The hospital social worker, and the person named on your written discharge plan.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: Medicare forms CMS-10065, CMS-10066, CMS-10611; Medicare publication 11376; New Jersey CARE Act, P.L. 2014 c.68. Educational only &mdash; not medical or legal advice.</p>
+</main>
+
+</body>
+</html>

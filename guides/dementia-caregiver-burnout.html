@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supporting a Parent With Dementia While Avoiding Caregiver Burnout | Blueprint Home Care</title>
+  <meta name="description" content="Communication techniques that actually work, a caregiver-stress checklist, and how New Jersey helps pay for respite." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .rule { margin-bottom: 1rem; }
+    .rule .label { font-weight: 600; color: var(--navy); font-size: 0.9rem; }
+
+    .quote-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.2rem 0; }
+    .quote-card {
+      background: var(--cream); border-radius: 2px; padding: 1.2rem 1.3rem;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--navy);
+      display: flex; align-items: center; text-align: center;
+    }
+
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+    .do-dont .col h4 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.6rem; }
+    .do-dont .do h4 { color: var(--sage); }
+    .do-dont .dont h4 { color: #B4502A; }
+    .do-dont ul { margin: 0 0 0 1.1rem; }
+    .do-dont li { font-size: 0.85rem; color: var(--mid); margin-bottom: 0.4rem; }
+
+    .stress-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 2rem; margin: 1rem 0 1.4rem; }
+    .stress-grid .item { font-size: 0.87rem; color: var(--dark); display: flex; gap: 0.5rem; }
+    .stress-grid .box { width: 12px; height: 12px; border: 1.5px solid var(--navy); border-radius: 2px; flex-shrink: 0; margin-top: 3px; }
+    .stat-line { font-size: 0.85rem; color: var(--mid); font-style: italic; margin-top: 0.6rem; }
+
+    .respite-box { background: var(--cream); border-left: 3px solid var(--tan); padding: 1.3rem 1.5rem; margin: 1.2rem 0; }
+    .respite-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.6rem; }
+    .respite-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .do-dont, .stress-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Supporting a Parent With Dementia While Avoiding Caregiver Burnout</h1>
+      <p>Communication techniques that actually work, and an honest look at what caregiving costs the caregiver.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">You are not managing memory loss. You are standing with someone whose world stopped making sense. Nearly every difficult behavior is a reasonable response to feeling lost, rushed, corrected, or touched without warning. Find the fear, and the technique becomes obvious.</p>
+
+      <section class="chapter">
+        <h2>Three Rules That Replace Arguing</h2>
+        <div class="rule"><span class="label">Don't correct.</span> Avoid criticizing or correcting. Instead, listen and try to find the meaning in what the person says.</div>
+        <div class="rule"><span class="label">Don't argue.</span> If the person says something you don't agree with, let it be.</div>
+        <div class="rule"><span class="label">Answer the feeling, not the fact.</span> Focus on the emotion, not the behavior.</div>
+      </section>
+
+      <section class="chapter">
+        <h2>Learn These Three Sentences By Heart</h2>
+        <div class="quote-row">
+          <div class="quote-card">&ldquo;You're safe here.&rdquo;</div>
+          <div class="quote-card">&ldquo;I'm sorry that you are upset.&rdquo;</div>
+          <div class="quote-card">&ldquo;I know it's hard. I will stay with you until you feel better.&rdquo;</div>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>The Same Question, For the Ninth Time</h2>
+        <p>Don't argue or try to use logic &mdash; the person may not remember he or she asked already. Give the person the answer they're looking for, even if you have to repeat it several times. Repetition is often anxiety asking to be soothed, not information being requested. Boredom is also an answer &mdash; engage the person in an activity.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>When It Escalates</h2>
+        <div class="do-dont">
+          <div class="col do">
+            <h4>Do</h4>
+            <ul>
+              <li>Back off, and ask permission</li>
+              <li>Slow down &middot; add light</li>
+              <li>Offer a choice between two things</li>
+              <li>Reassure, in calm positive statements</li>
+              <li>Cut noise, glare, the television</li>
+            </ul>
+          </div>
+          <div class="col dont">
+            <h4>Do Not</h4>
+            <ul>
+              <li>Raise your voice</li>
+              <li>Show alarm or offense</li>
+              <li>Corner, crowd, or restrain</li>
+              <li>Criticize or ignore</li>
+              <li>Argue</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>Ten Symptoms of Caregiver Stress &mdash; Count Yours Honestly</h2>
+        <div class="stress-grid">
+          <div class="item"><span class="box"></span>Denial &mdash; "I know Mom is going to get better."</div>
+          <div class="item"><span class="box"></span>Exhaustion &mdash; "I'm too tired for this."</div>
+          <div class="item"><span class="box"></span>Anger &mdash; "He's just being stubborn."</div>
+          <div class="item"><span class="box"></span>Sleeplessness &mdash; "What if she wanders out?"</div>
+          <div class="item"><span class="box"></span>Withdrawal from friends and things you enjoyed</div>
+          <div class="item"><span class="box"></span>Irritability &mdash; "Leave me alone!"</div>
+          <div class="item"><span class="box"></span>Anxiety &mdash; "What happens when he needs more than I can give?"</div>
+          <div class="item"><span class="box"></span>Lack of concentration &mdash; "I forgot my appointment."</div>
+          <div class="item"><span class="box"></span>Depression &mdash; "I just don't care anymore."</div>
+          <div class="item"><span class="box"></span>Health problems &mdash; "I can't remember the last time I felt good."</div>
+        </div>
+        <p class="stat-line">If you experience any of these signs on a regular basis, make time to talk to your doctor. Nationally, 59% of dementia caregivers report high to very high emotional stress, and more than one in four has been diagnosed with depression.</p>
+      </section>
+
+      <div class="respite-box">
+        <h3>New Jersey Will Help Pay for Your Break</h3>
+        <p><strong>Statewide Respite Care Program</strong> &mdash; for unpaid family caregivers; you pay 0&ndash;25% on a sliding scale. <strong>JACC</strong> &mdash; age 60+, needs help with 3+ daily activities, up to $1,090/month. You cannot have both; pick one. Apply for either through your county office on aging: <a href="tel:18772223737" style="color:var(--navy);">1-877-222-3737</a>.</p>
+      </div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>This week</h3>
+      <p>Book one thing that is only for you. Two hours.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Quoted guidance and figures: Alzheimer's Association (alz.org), 2026 Facts and Figures and caregiver guidance pages. Educational only &mdash; not medical advice.</p>
+</main>
+
+</body>
+</html>
