@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trusted NJ Resources for Caregivers | Blueprint Home Care</title>
+  <meta name="description" content="One statewide phone number, your county's office on aging, and the state programs that help pay for a caregiver's break — an informational roundup, not an endorsement." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .resource-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1rem 0 1.4rem; }
+    .resource-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+    .resource-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.5rem; }
+    .resource-box p:last-child { margin-bottom: 0; }
+    .resource-box .meta { font-size: 0.83rem; font-weight: 500; color: var(--navy); }
+    .resource-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Trusted NJ Resources for Caregivers: Where to Turn Next</h1>
+      <p>One statewide phone number, your county's office on aging, and the state programs that help pay for a caregiver's break.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">You don't have to figure this out alone, and you don't have to figure it out only through us. Below are five outside organizations &mdash; state, county, and national &mdash; that families use alongside home care, or before they've decided what kind of help they need at all.</p>
+
+      <div class="callout">
+        <span class="tag">Please read before you call</span>
+        <p>This is an informational listing, not an endorsement. Blueprint has no financial relationship with any organization named here. Verify hours, eligibility, and current phone numbers directly with each organization before relying on the details below &mdash; government pages and program rules change.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>Start Here If You Don't Know Where to Start</h2>
+        <p>New Jersey's Aging &amp; Disability Resource Connection (ADRC) is the state's front door for aging and disability services, in every county. One call gets you screened for benefits and pointed to local programs &mdash; including the two respite programs below.</p>
+        <div class="resource-box">
+          <h3>NJ Aging &amp; Disability Resource Connection (ADRC)</h3>
+          <p>Statewide, single point of entry for benefits screening and referrals &mdash; a reasonable first call regardless of county.</p>
+          <p class="meta"><a href="tel:8772223737">1-877-222-3737</a> &middot; <a href="https://www.nj.gov/humanservices/doas/" target="_blank" rel="noopener">nj.gov/humanservices/doas</a></p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>Your County's Office on Aging</h2>
+        <p>Morris County's Aging, Disabilities &amp; Community Programming division keeps three directories families ask us about most: a Caregiver Resource Directory, an Adult Day Care Programs list, and a Caregiver Support Groups list. If you're outside Morris County, the ADRC number above can connect you to your own county office.</p>
+        <div class="resource-box">
+          <h3>Morris County &mdash; Aging, Disabilities &amp; Community Programming</h3>
+          <p>Care management, caregiver support, one-time prescription assistance, Project Lifesaver, and MAPS transportation, plus the three directories above.</p>
+          <p class="meta"><a href="tel:8005644656">1-800-564-4656</a> &middot; <a href="https://www.morriscountynj.gov/Residents/Community-Information/For-Caregivers" target="_blank" rel="noopener">morriscountynj.gov &mdash; For Caregivers</a></p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>When You Need a Break, Not Just a Referral</h2>
+        <p>Caregiving without relief is how caregivers end up in the hospital themselves. New Jersey runs two state-funded programs built specifically around giving family caregivers time off, and around keeping an aging parent at home instead of in a facility.</p>
+        <div class="resource-box">
+          <h3>Jersey Assistance for Community Caregiving (JACC)</h3>
+          <p>State-funded, in-home and community-based services for people 60 and older who meet nursing-home-level clinical eligibility but want to stay home.</p>
+          <p class="meta"><a href="https://www.nj.gov/humanservices/doas/services/a-k/jacc/" target="_blank" rel="noopener">nj.gov &mdash; JACC Program</a></p>
+        </div>
+        <div class="resource-box">
+          <h3>NJ Statewide Respite Care Program</h3>
+          <p>A short-term or periodic break from daily caregiving duties for families caring for a functionally impaired older adult.</p>
+          <p class="meta"><a href="https://www.nj.gov/humanservices/doas/services/q-z/srcp/" target="_blank" rel="noopener">nj.gov &mdash; Statewide Respite Care Program</a></p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>When the Question Is Bigger Than One Service</h2>
+        <p>Some families need less "who provides care" and more "what is the plan." That's a different professional than a home care agency: a geriatric care manager, sometimes called an aging life care professional. They assess the whole situation, coordinate between doctors and family, and can be worth engaging alongside home care, not instead of it.</p>
+        <div class="resource-box">
+          <h3>Aging Life Care Association</h3>
+          <p>National professional association for geriatric care managers, with a directory to find one near you.</p>
+          <p class="meta"><a href="https://www.aginglifecare.org/" target="_blank" rel="noopener">aginglifecare.org &mdash; Find an Aging Life Care Expert</a></p>
+        </div>
+      </section>
+
+      <div class="quote-box">&ldquo;You are allowed to ask for help before you're in crisis. Every organization on this page exists for exactly that call.&rdquo;</div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Also ask</h3>
+      <p>Us &mdash; if you're not sure which of these fits your situation, or whether home care should come before or alongside any of them, that's a conversation we're glad to have with no pressure attached.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: NJ Aging &amp; Disability Resource Connection (nj.gov/humanservices/doas); Morris County Aging, Disabilities &amp; Community Programming; NJ Division of Aging Services (JACC, Statewide Respite Care Program); Aging Life Care Association (aginglifecare.org). Links and phone numbers verified 2026-09-22. Informational only &mdash; not an endorsement of any organization named, and not medical or legal advice.</p>
+</main>
+
+</body>
+</html>
