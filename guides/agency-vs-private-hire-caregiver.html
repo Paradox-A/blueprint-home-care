@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agency or Private Hire? The Legal Differences in New Jersey | Blueprint Home Care</title>
+  <meta name="description" content="New Jersey treats agency and private-hire caregivers very differently under the law — who's the employer, who pays the taxes, and who's liable if someone gets hurt." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .check-list { margin: 0 0 1.4rem; }
+    .check-item { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.88rem; color: var(--dark); margin-bottom: 0.6rem; }
+    .check-item .box { width: 13px; height: 13px; border: 1.5px solid var(--navy); border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
+
+    .appeal-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1.2rem 0; }
+    .appeal-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.6rem; }
+    .appeal-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0; }
+    .appeal-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Agency or Private Hire? The Legal Differences in New Jersey</h1>
+      <p>Before you decide how a caregiver comes into the home, know who the law says is actually the employer &mdash; because in New Jersey, that answer carries real legal weight.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">Families comparing a home care agency to hiring a caregiver privately often treat it as a simple preference. Legally, it isn't &mdash; New Jersey law puts very different obligations on each path: who withholds taxes, who carries insurance, and who is responsible if someone gets hurt. This guide walks through what each path actually requires. It's educational only, not legal or tax advice; a New Jersey-licensed attorney or accountant can advise on your specific situation.</p>
+
+      <section class="chapter">
+        <h2>Two Paths Into the Home</h2>
+        <p>Families generally choose between two arrangements:</p>
+        <ul>
+          <li><strong>A registered Health Care Service Firm (an agency).</strong> The firm employs, trains, and schedules the caregiver, and places them with your family.</li>
+          <li><strong>A direct or "private pay" hire.</strong> You find and pay a caregiver yourself, outside of any firm.</li>
+        </ul>
+        <p>Both are legal choices. They are not, however, legally equivalent &mdash; the responsibilities simply land on a different party.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What New Jersey Requires of a Registered Agency</h2>
+        <p>Any firm that employs, places, or refers someone to provide companion, personal, or health care services in the home of a person who is 60 or older or living with a disability must register with the New Jersey Division of Consumer Affairs as a Health Care Service Firm, under N.J.S.A. 34:8-45.1 et seq. and N.J.A.C. 13:45B-13.</p>
+        <p>A core requirement of that registration: caregivers placed by a registered firm must be <em>direct employees</em> of the firm, not independent contractors. In practice, that means the firm &mdash; not your family &mdash; is the legal employer. The firm withholds payroll taxes, carries workers' compensation coverage for the caregiver, and is responsible for screening, training, and supervision.</p>
+        <div class="callout">
+          <span class="tag">Verify, don't assume</span>
+          <p>Any agency you're considering should be able to give you its registration number on request. Call the Division of Consumer Affairs' Regulated Business Section and confirm that number actually matches a currently registered firm before you sign anything &mdash; Blueprint's own registration, for reference, is NJ HCSF Reg. HP0441400.</p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>What Changes When You Hire Directly</h2>
+        <p>When a family hires a caregiver on their own, the family itself becomes the caregiver's legal employer. Since July 1, 2024, that relationship is governed by New Jersey's Domestic Workers' Bill of Rights Act (P.L.2023, c.262), which covers anyone providing companionship or caretaking services for an older adult or person with a disability in a private home. As the employer, a family would generally be responsible for:</p>
+        <ul>
+          <li>Registering as an employer and making the required payroll tax contributions</li>
+          <li>Giving the worker written notice of their rights, and a written contract if they work five or more hours a week on a regular, ongoing basis</li>
+          <li>Providing paid rest breaks and a meal break during the workday, and at least one day off after six consecutive days of work</li>
+          <li>Providing up to 40 hours of earned sick leave per year</li>
+          <li>Keeping records of hours worked, pay, breaks, and leave used</li>
+        </ul>
+        <p>The Act also extends New Jersey's Law Against Discrimination and Wage and Hour Law (including minimum wage and overtime) to domestic workers for the first time &mdash; protections that didn't previously apply to this kind of work.</p>
+        <div class="quote-box">Hiring outside an agency doesn't mean hiring outside the law. It means your family, rather than a firm, is the one responsible for complying with it.</div>
+      </section>
+
+      <section class="chapter">
+        <h2>Taxes: The "Household Employer" Side</h2>
+        <p>Hiring privately also makes you a household employer for tax purposes, at both the federal and state level:</p>
+        <h3>Federal</h3>
+        <p>The IRS requires a household employer to withhold and pay Social Security and Medicare taxes once a caregiver's cash wages cross an annual threshold that the IRS adjusts from year to year, plus federal unemployment tax above a separate quarterly threshold. These are reported on Schedule H, filed with your personal tax return, using an Employer Identification Number rather than your own Social Security number. Current thresholds and filing details are published at IRS.gov, Topic No. 756.</p>
+        <h3>New Jersey</h3>
+        <p>A household employer also registers with the Division of Revenue and Enterprise Services, and reports wages and contributions &mdash; covering unemployment, disability, and family leave insurance &mdash; using Form NJ-927-H (filed annually) and Form WR-30, per NJ Division of Taxation Technical Bulletin TB-52.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>If Someone Is Hurt in Your Home</h2>
+        <p>Workers' compensation is where the two paths diverge most clearly. A registered agency carries workers' compensation coverage for its own employees as a condition of doing business &mdash; if a caregiver is injured on a case, the agency's policy is what responds.</p>
+        <p>When you hire privately, the Domestic Workers' Bill of Rights also extends workers' compensation, unemployment, and temporary disability coverage to the worker &mdash; but it is your household, as the employer, that is responsible for securing that coverage. A caregiver injured on the job with no coverage in place can pursue the household directly. This is worth discussing with an insurance agent or attorney before hiring privately; a standard homeowner's or renter's policy is unlikely to be built for it.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>Questions Worth Asking Yourself</h2>
+        <div class="check-list">
+          <div class="check-item"><span class="box"></span>Am I ready to register as an employer with the IRS and the State of New Jersey, and file the associated paperwork every year?</div>
+          <div class="check-item"><span class="box"></span>Do I have &mdash; or am I ready to secure &mdash; workers' compensation coverage for someone working in my home?</div>
+          <div class="check-item"><span class="box"></span>Am I comfortable drafting a written work agreement and tracking hours, breaks, and leave on an ongoing basis?</div>
+          <div class="check-item"><span class="box"></span>If my caregiver is sick, on vacation, or leaves the job, do I have a same-day backup plan?</div>
+          <div class="check-item"><span class="box"></span>Have I verified any agency's registration number directly with the NJ Division of Consumer Affairs, rather than taking it on faith?</div>
+        </div>
+      </section>
+
+      <div class="appeal-box">
+        <h3>Neither Path Is Automatically Right</h3>
+        <p>What matters is choosing with your eyes open about who the law says is responsible for what &mdash; and being ready to meet that responsibility, whichever path you take.</p>
+      </div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Also ask</h3>
+      <p>An employment attorney or accountant, especially if you're leaning toward hiring privately &mdash; the paperwork is real, and getting it wrong carries real exposure. We're also glad to talk through how the agency side works, with no pressure attached.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: N.J.S.A. 34:8-45.1 et seq. and N.J.A.C. 13:45B-13 (NJ Health Care Service Firm Registration Act, NJ Division of Consumer Affairs); New Jersey Domestic Workers' Bill of Rights Act, P.L.2023, c.262, NJ Department of Labor &amp; Workforce Development (nj.gov/labor/domesticworkers); NJ Division of Taxation Technical Bulletin TB-52 and Form NJ-927-H; NJ Department of Labor Form WR-30; IRS Topic No. 756 and Schedule H (Form 1040). Educational only &mdash; not legal or tax advice.</p>
+</main>
+
+</body>
+</html>
