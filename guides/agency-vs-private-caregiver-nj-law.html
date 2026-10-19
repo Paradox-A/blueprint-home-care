@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agency or Private Hire? What NJ Law Says About Who's the Employer | Blueprint Home Care</title>
+  <meta name="description" content="The legal and liability differences between a registered home care agency and hiring a caregiver directly in New Jersey — explained in plain language." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0 2rem;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .resource-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1rem 0 1.4rem; }
+    .resource-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+    .resource-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.5rem; }
+    .resource-box p:last-child { margin-bottom: 0; }
+    .resource-box a { color: var(--navy); font-weight: 600; }
+
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0 0.4rem; }
+    .do-dont .col h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 500; color: var(--navy); margin-bottom: 0.6rem; }
+    .do-dont ul { margin: 0 0 0 1.1rem; }
+    .do-dont li { font-size: 0.85rem; color: var(--mid); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .do-dont { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>Agency or Private Hire? What New Jersey Law Says About Who's the Employer</h1>
+      <p>The legal and liability differences most families never hear about until something goes wrong &mdash; explained in plain language.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">When a family decides it's time to bring in help, the choice often gets framed as "agency versus hiring someone ourselves." What rarely gets explained is that this is also a legal choice: it decides who, under New Jersey and federal law, becomes the caregiver's employer &mdash; and who inherits the paperwork, tax obligations, and liability that come with that role.</p>
+
+      <div class="callout">
+        <span class="tag">Please read before you decide</span>
+        <p>This guide explains how New Jersey and federal law generally treat these two arrangements. It is educational information, not legal or tax advice, and it isn't a substitute for talking with an employment attorney or accountant about your specific situation. Laws and thresholds referenced here change &mdash; verify current details at the sources listed at the bottom of this page.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>Two Paths, Two Different Employers</h2>
+        <p>Broadly, families choose between two models:</p>
+        <ul>
+          <li><strong>A registered home care agency</strong> employs or refers the caregiver and remains the business responsible for the arrangement &mdash; payroll, insurance, screening, and coverage when someone calls out.</li>
+          <li><strong>A privately hired, independent caregiver</strong> is paid directly by the family, often found through word of mouth, a classified ad, or a caregiver-matching website. In this arrangement, the family itself typically takes on the legal role of employer.</li>
+        </ul>
+        <p>Neither path is against the law. But each comes with real obligations, and it's worth understanding both before you commit to one.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What "Registered Health Care Service Firm" Actually Means</h2>
+        <p>Under New Jersey law (N.J.S.A. 34:8-43 et seq.), a business that employs, places, or in any way refers workers to provide companion, home care, or personal care services inside a private home &mdash; for a client who is 60 or older or has a disability &mdash; must register with the New Jersey Division of Consumer Affairs as a <strong>Health Care Service Firm (HCSF)</strong>. Registered firms are also required to obtain accreditation from a body recognized by the state within roughly a year of registering. Blueprint's own registration number, HP0441400, is this designation at work.</p>
+        <p>This registration requirement is specific to firms &mdash; it doesn't apply to a family hiring one person directly. That's exactly why it's worth asking any agency you're considering for their current HCSF registration number and confirming it directly with the Division of Consumer Affairs, rather than taking a website claim at face value.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>If You Hire Directly, You May Become a "Household Employer"</h2>
+        <p>The IRS treats anyone who hires a worker to perform services in their home, and who controls what work is done and how, as a <strong>household employer</strong> &mdash; this includes a privately hired caregiver, not just a nanny or housekeeper. Per IRS Publication 926 (the Household Employer's Tax Guide), that generally means the family, not the caregiver, is responsible for obtaining an employer identification number, and &mdash; once the caregiver's cash wages for the year cross the threshold the IRS publishes annually in that guide &mdash; for withholding and matching Social Security and Medicare taxes, with possible federal unemployment tax obligations on top. Because that dollar threshold is adjusted periodically, check the current-year edition of Publication 926 at irs.gov rather than relying on a number you saw somewhere else.</p>
+        <p>Some families try to sidestep this by calling a privately hired caregiver a "1099 independent contractor." Whether that label actually holds up, however, isn't up to the family &mdash; it's decided by the tests described next.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>New Jersey's "ABC Test" Doesn't Care What the Paperwork Says</h2>
+        <p>For decisions under New Jersey's Unemployment Compensation Law (N.J.S.A. 43:21-19(i)(6)), a worker is presumed to be an <strong>employee</strong> unless the hiring party proves all three of the following:</p>
+        <ul>
+          <li><strong>(A)</strong> the worker is free from control or direction over how the work is performed;</li>
+          <li><strong>(B)</strong> the work is either outside the usual course of the hiring party's business, or performed outside all of the hiring party's places of business; and</li>
+          <li><strong>(C)</strong> the worker is customarily engaged in an independently established trade, occupation, profession, or business of that same nature.</li>
+        </ul>
+        <p>In <em>Hargrove v. Sleepy's, LLC</em>, 220 N.J. 289 (2015), the New Jersey Supreme Court held that this same ABC test &mdash; not just a looser "right to control" standard &mdash; also governs independent-contractor status under New Jersey's Wage and Hour Law and Wage Payment Law, not only unemployment claims.</p>
+        <p>In practice, a caregiver who works regularly in one family's home, on a schedule the family sets, doing exactly the caregiving the family needs, will often struggle to satisfy prong (B) or (C) &mdash; regardless of what a signed agreement between the family and the caregiver calls the relationship. A contract that labels someone a "contractor" does not control the outcome if the actual working relationship looks like employment.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>The 2024 Domestic Workers' Bill of Rights Changed the Rules Again</h2>
+        <p>New Jersey's Domestic Workers' Bill of Rights (N.J.S.A. 34:11-69 et seq.), effective July 1, 2024, added new obligations for households that hire someone like a caregiver directly, with narrow exceptions for very occasional or casual work. Among them:</p>
+        <ul>
+          <li>A <strong>written contract</strong> is generally required between the household and the worker, provided in English and in the worker's preferred language, covering duties, wages and overtime, schedule, breaks, leave, and other specified terms.</li>
+          <li>The contract may not include certain clauses, such as mandatory pre-dispute arbitration or non-disparagement provisions.</li>
+          <li>Household employers are generally required to carry <strong>workers' compensation insurance</strong> covering the worker.</li>
+        </ul>
+        <p>When a family works with a registered agency instead, it's the agency &mdash; as the employing or referring firm &mdash; that typically carries this coverage and handles this paperwork, not the family.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>Where the Responsibility Actually Lands</h2>
+        <div class="do-dont">
+          <div class="col">
+            <h4>Working With a Registered Agency</h4>
+            <ul>
+              <li>The agency is generally the employer (or registered referring firm)</li>
+              <li>Agency typically handles payroll taxes and insurance</li>
+              <li>Agency is responsible for its own screening and accreditation standards</li>
+              <li>Agency usually arranges coverage if a caregiver is unavailable</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Hiring a Caregiver Directly</h4>
+            <ul>
+              <li>The family is generally the employer</li>
+              <li>Family is typically responsible for payroll taxes, an EIN, and insurance</li>
+              <li>Family is responsible for its own screening decisions</li>
+              <li>Family generally arranges its own backup when a caregiver is unavailable</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>Whichever Path You Choose</h2>
+        <p>Keep the scope of care non-medical. A caregiver &mdash; whether employed by an agency or hired directly &mdash; should provide companionship, personal care, and medication reminders, not medication management or clinical judgment calls. Any question about a medication, a new symptom, or a change in condition belongs with the person's own physician or a licensed home health agency, not with whoever happens to be in the home.</p>
+      </section>
+
+      <div class="resource-box">
+        <h3>Verify Before You Sign Anything</h3>
+        <p>Confirm an agency's current HCSF registration directly with the New Jersey Division of Consumer Affairs rather than relying on a website claim.</p>
+        <p>Check the current-year IRS Publication 926 at irs.gov for this year's household-employer tax thresholds before assuming any figure is still accurate.</p>
+        <p>If you're unsure how New Jersey's ABC test would apply to your situation, or what the Domestic Workers' Bill of Rights requires of you specifically, a New Jersey employment attorney or accountant can give you an answer tailored to your circumstances &mdash; this guide can't.</p>
+      </div>
+
+      <div class="quote-box">&ldquo;Agency or private hire, the question isn't which is right in general &mdash; it's which set of responsibilities your family is prepared to carry.&rdquo;</div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Still deciding?</h3>
+      <p>If you'd like to talk through what either path would actually look like for your family &mdash; no pressure, no sales pitch &mdash; we're glad to have that conversation.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: New Jersey Health Care Service Firms Act, N.J.S.A. 34:8-43 et seq. (NJ Division of Consumer Affairs); New Jersey Unemployment Compensation Law "ABC test," N.J.S.A. 43:21-19(i)(6) (NJ Department of Labor and Workforce Development); <em>Hargrove v. Sleepy's, LLC</em>, 220 N.J. 289 (2015); New Jersey Domestic Workers' Bill of Rights, N.J.S.A. 34:11-69 et seq., effective July 1, 2024; IRS Publication 926, Household Employer's Tax Guide (irs.gov). Verified current as of 2026-10-19. Educational only &mdash; not legal, tax, or medical advice.</p>
+</main>
+
+</body>
+</html>
