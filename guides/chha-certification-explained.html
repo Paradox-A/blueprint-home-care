@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What "CHHA Certified" Actually Means in NJ | Blueprint Home Care</title>
+  <meta name="description" content="What training, testing, and background checks stand behind the CHHA credential most home care aides in New Jersey hold — and the two-minute way to verify it yourself." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .resource-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1rem 0 1.4rem; }
+    .resource-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+    .resource-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.5rem; }
+    .resource-box p:last-child { margin-bottom: 0; }
+    .resource-box .meta { font-size: 0.83rem; font-weight: 500; color: var(--navy); }
+    .resource-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+    .footer-source a { color: var(--mid); }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>What &ldquo;CHHA Certified&rdquo; Actually Means in New Jersey</h1>
+      <p>The training, testing, and background check behind the credential most home care aides in New Jersey hold &mdash; and how to verify it yourself in two minutes.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">Almost every home care agency in New Jersey, including Blueprint, will tell you its caregivers are &ldquo;CHHA certified.&rdquo; Families rarely ask what that actually requires. Here's what sits behind the initials, straight from the state regulation and the Board that issues it &mdash; so you know what you're actually being told when you hear it.</p>
+
+      <div class="callout">
+        <span class="tag">Before you read further</span>
+        <p>This guide explains a state credential, not a substitute for your own research or for medical advice. It is not legal advice. Program rules, hours, and contact information change; verify current details directly with the New Jersey Board of Nursing or the sources linked in the footer before relying on them.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>What CHHA Actually Stands For</h2>
+        <p>CHHA stands for Certified Homemaker-Home Health Aide. It is not a nursing license &mdash; it's a certification, issued by the New Jersey Board of Nursing (part of the Division of Consumer Affairs), that allows someone without a nursing degree to perform defined personal-care and homemaking tasks under a structured training and oversight model.</p>
+        <div class="resource-box">
+          <h3>Where it's written into law</h3>
+          <p>The certification is governed by Subchapter 14 of the Board of Nursing's regulations, &ldquo;Homemaker-Home Health Aides,&rdquo; which sets the training, testing, and renewal requirements described below.</p>
+          <p class="meta">N.J.A.C. 13:37-14 &middot; <a href="https://www.njconsumeraffairs.gov/hhh" target="_blank" rel="noopener">njconsumeraffairs.gov/hhh</a></p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>What It Actually Takes to Earn the Certification</h2>
+        <p>New Jersey's Department of Human Services describes four requirements a candidate must meet before the Board of Nursing will certify them:</p>
+        <ul>
+          <li>Complete a Board-approved training program totaling at least 76 hours &mdash; 60 hours of classroom instruction and 16 hours of supervised, hands-on clinical training &mdash; coordinated by a New Jersey-licensed registered nurse.</li>
+          <li>Demonstrate the required hands-on skills to that supervising nurse.</li>
+          <li>Pass a written competency exam.</li>
+          <li>Pass a criminal history background check.</li>
+        </ul>
+        <p>Candidates must also be at least 18 and hold a government-issued photo ID. (Nursing students who have already completed a Fundamentals of Nursing course may be able to apply without repeating the 76-hour program &mdash; ask a specific training program whether that applies.)</p>
+        <div class="resource-box">
+          <h3>The state's own description of the role</h3>
+          <p>New Jersey's Department of Human Services publishes a plain-language overview of the CHHA role and its requirements as part of its direct-care workforce recruiting.</p>
+          <p class="meta"><a href="https://www.nj.gov/humanservices/jobsthatcare/chha/about" target="_blank" rel="noopener">nj.gov &mdash; Certified Home Health Aide</a></p>
+        </div>
+        <p>The fingerprint-based criminal history check runs against NJ State Police and FBI records and happens once, at certification &mdash; it's the same background check we describe in more detail in our guide to <a href="agency-vs-private-hire-nj-law.html">agency care vs. hiring privately under NJ law</a>.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>Why a CHHA Generally Can't Simply Freelance</h2>
+        <p>One detail families don't usually expect: the Board's own program guidance states plainly that a certified homemaker-home health aide must be employed by a New Jersey-licensed home health care services agency, and may not work privately under that certification. The certification is built around an employer that handles the required RN oversight &mdash; it isn't designed to stand alone.</p>
+        <div class="resource-box">
+          <h3>Worth asking any caregiver or agency</h3>
+          <p>If you're comparing a private hire to an agency caregiver, this is a fair, specific question to ask: who is the supervising nurse of record for this person's CHHA certification, and how is that oversight maintained?</p>
+          <p class="meta"><a href="https://www.njconsumeraffairs.gov/hhh/Pages/General-Questions.aspx" target="_blank" rel="noopener">njconsumeraffairs.gov &mdash; CHHA Program, General Questions</a></p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>How to Verify a CHHA's Certification Yourself</h2>
+        <p>You don't have to take anyone's word for it. The Board of Nursing's own guidance recommends checking its online directory of certified homemaker-home health aides before you hire, and makes a phone line available for questions about a specific certification's status.</p>
+        <div class="resource-box">
+          <h3>NJ Board of Nursing &mdash; CHHA Program</h3>
+          <p>Online directory and program information, plus a phone line for status questions. Numbers and the directory's exact location occasionally change &mdash; confirm both at the link below before calling.</p>
+          <p class="meta"><a href="https://www.njconsumeraffairs.gov/hhh" target="_blank" rel="noopener">njconsumeraffairs.gov/hhh</a> &middot; (973) 504-6546</p>
+        </div>
+        <p>A reasonable follow-up question for any agency, including Blueprint: ask how &mdash; and how often &mdash; they confirm each caregiver's certification is current, not just verified once at hire.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>Certification Isn't Permanent &mdash; It's Renewed</h2>
+        <p>Certification and reactivation are addressed separately in the regulations, and multiple independent sources describe a renewal cycle on the order of every two years. Treat the exact cycle and any fees as subject to change, and confirm the current renewal period directly with the Board rather than relying on a fixed number here.</p>
+        <p class="meta" style="font-size:0.8rem;color:var(--mid);">N.J.A.C. 13:37-14.14, Certification; reactivation</p>
+      </section>
+
+      <section class="chapter" style="margin-bottom:0;">
+        <h2>What CHHA Certification Does Not Mean</h2>
+        <p>A CHHA is trained and certified to provide non-medical personal care and homemaking support &mdash; help with bathing, dressing, meal preparation, light housekeeping, transportation, and medication <em>reminders</em>. It is not a nursing license, and it does not authorize medical judgment, medication management, or clinical decision-making. Any medical question &mdash; a new symptom, a medication change, a concerning fall &mdash; belongs with the person's own doctor or treating clinician, not with the caregiver or the agency.</p>
+      </section>
+
+      <div class="quote-box">&ldquo;A credential is only useful if you know what it actually certifies. Ask the question &mdash; any agency worth hiring should welcome it.&rdquo;</div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Also ask us</h3>
+      <p>If you'd like to see how we confirm every Blueprint caregiver's CHHA certification before they're matched with a family &mdash; and how we keep that confirmation current &mdash; that's a conversation we're glad to have, no pressure attached.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: New Jersey Board of Nursing regulations on Homemaker-Home Health Aides, N.J.A.C. 13:37-14 (regulations.justia.com); NJ Division of Consumer Affairs, CHHA Program (njconsumeraffairs.gov/hhh); New Jersey Department of Human Services, Certified Home Health Aide overview (nj.gov/humanservices/jobsthatcare/chha/about); N.J.S.A. 45:1-28 and the NJ Division of Consumer Affairs Criminal History Review Unit, on CHHA background-check requirements. Checked November 2026. Educational only &mdash; not legal or medical advice, and not an endorsement of any organization named. Contact information and program rules change; verify current details directly with the NJ Board of Nursing before relying on them.</p>
+</main>
+
+</body>
+</html>
