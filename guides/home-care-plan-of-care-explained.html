@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Should Be in Your Home Care Plan of Care | Blueprint Home Care</title>
+  <meta name="description" content="What a written home care plan of care should actually include, who New Jersey guidance says should write it, and the questions to ask if yours is missing something." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .resource-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1rem 0 1.4rem; }
+    .resource-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+    .resource-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.5rem; }
+    .resource-box p:last-child { margin-bottom: 0; }
+    .resource-box .meta { font-size: 0.83rem; font-weight: 500; color: var(--navy); }
+    .resource-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+    .footer-source a { color: var(--mid); }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>What Should Be in Your Home Care Plan of Care</h1>
+      <p>The one document that's supposed to tell everyone &mdash; family, caregiver, and agency &mdash; exactly what care looks like day to day. Here's who should write it, what it should cover, and what to ask if yours falls short.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">A home care agency should hand you a written plan of care before service ever starts &mdash; not a brochure, not a verbal rundown, but a specific document describing what a caregiver will actually do in your home, for your family member, on a given day. Too many families never see one until they ask for it. Here's what New Jersey's own guidance for home care firms says should be in it.</p>
+
+      <div class="callout">
+        <span class="tag">Before you read further</span>
+        <p>This guide describes what a non-medical home care plan of care typically covers and who New Jersey guidance says should prepare it. It is not medical or legal advice, and it is not a guarantee of how any specific agency operates &mdash; ask your own agency to show you its process. Bring any clinical question, about a diagnosis, a medication, or a course of treatment, to a physician or nurse, not to this page.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>A Plan of Care Is a Work Order, Not a Diagnosis</h2>
+        <p>Non-medical home care covers help with daily living &mdash; bathing, dressing, light housekeeping, meal preparation, transportation, medication reminders, and companionship. A plan of care for this kind of service is the written record of what that help actually looks like for one specific person: which tasks, on which days, with which preferences and precautions in mind. Its job is to let any caregiver who walks through the door &mdash; the regular one or a substitute &mdash; know what to do without guessing.</p>
+        <p>What it isn't is a medical chart. It doesn't diagnose a condition, prescribe a treatment, or direct medication beyond reminding someone it's time to take what a doctor already prescribed. Decisions about health conditions, medications, and treatment stay with the client's own physician, and with a skilled home health nurse if one is separately involved.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>Who Should Write It, and When</h2>
+        <p>New Jersey registers firms like Blueprint as Health Care Service Firms (HCSFs) under the Health Care Service Firm Act. The New Jersey Board of Nursing publishes best-practice guidance for how HCSFs should operate, and on this point it's specific: the firm's Director of Nursing or Health Care Services Supervisor &mdash; or a Nurse Supervisor that person assigns &mdash; should develop the plan of care based on an in-person assessment, before service begins.</p>
+        <p>That guidance describes sound practice rather than functioning as a law a regulator enforces line by line &mdash; the document itself notes its contents are best-practice recommendations, not a binding checklist. That's exactly why it's worth asking any agency directly: who assessed my family member in person, who wrote the plan, and when was the last time someone reviewed it against how things are actually going?</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What a Good Plan of Care Should Cover</h2>
+        <p>State guidance for New Jersey home care firms, and the compliance patterns home care consultants track across agency surveys, point to the same core elements. A plan of care worth the name should spell out:</p>
+        <ul>
+          <li>The specific tasks and schedule of care &mdash; what happens on which days and shifts, not just "personal care" in general terms.</li>
+          <li>Functional abilities and limitations &mdash; what your family member can do independently, and where they need a hand.</li>
+          <li>Activities permitted or restricted, as set by their own doctor and passed along to the caregiver &mdash; not decided by the agency or caregiver.</li>
+          <li>Nutritional needs and preferences, including any dietary restriction a physician has set.</li>
+          <li>Safety measures specific to that home: fall risks, exits that need monitoring, equipment in use.</li>
+          <li>Any supplies or equipment the caregiver should know how to use.</li>
+          <li>A medication <em>reminder</em> schedule &mdash; what time, which prescribed medications &mdash; not instructions for a caregiver to administer or manage medication themselves.</li>
+          <li>Emergency contacts and what the caregiver should do if something goes wrong.</li>
+          <li>A communication plan: who gets updates after each visit, how often, and how to reach a real person at the agency if something needs to change.</li>
+        </ul>
+        <p>If a plan you're shown is missing most of this &mdash; or doesn't exist in writing at all &mdash; that's worth raising before you sign anything.</p>
+      </section>
+
+      <div class="resource-box">
+        <h3>If a Loved One Also Has Skilled Home Health</h3>
+        <p>Don't confuse this with a Medicare-certified home health agency's plan of care, which is a different, federally regulated document for skilled medical visits &mdash; nursing, physical therapy, and similar services ordered by a physician. Under federal rule, that plan of care must be signed by the responsible physician, must address pertinent diagnoses and medications, and must be reviewed and revised at least every 60 days. Non-medical home care and skilled home health can run alongside each other for the same person, but they're governed separately and should be coordinated, not confused.</p>
+        <p class="meta"><a href="https://www.law.cornell.edu/cfr/text/42/484.60" target="_blank" rel="noopener">law.cornell.edu &mdash; 42 CFR &sect; 484.60, Medicare Home Health Conditions of Participation</a></p>
+      </div>
+
+      <section class="chapter">
+        <h2>Keeping the Plan Current</h2>
+        <p>A plan of care that's accurate on day one and never revisited stops being useful fast. Needs change after a fall, a hospital stay, a new diagnosis, or simply as a condition progresses. Ask your agency, in plain terms, how often the plan gets reviewed and by whom, and what triggers an update outside of that schedule &mdash; practices vary by firm, so get the specific answer for yours rather than assuming.</p>
+        <p>If you're also navigating a hospital discharge, our <a href="hospital-to-home-transition.html">guide to a safe hospital-to-home transition</a> covers the first 72 hours in more depth.</p>
+      </section>
+
+      <section class="chapter" style="margin-bottom:0;">
+        <h2>Questions Worth Asking Before &mdash; and After &mdash; You Sign</h2>
+        <ul>
+          <li>Who assessed my family member in person, and what's their title and license?</li>
+          <li>Can I see the written plan of care before the first visit, not just hear a summary?</li>
+          <li>How and when will I be told if the plan changes?</li>
+          <li>What exactly does "medication reminders" mean in practice at your agency?</li>
+          <li>If my family member's needs change suddenly, who do I call, and how is the plan updated?</li>
+        </ul>
+        <p>Our <a href="hiring-questions-checklist.html">printable checklist of questions to ask before you hire a home care agency</a> covers the broader conversation this fits into.</p>
+      </section>
+
+      <div class="quote-box">&ldquo;A plan of care is only worth as much as the conversation behind it. The document matters less than whether anyone can tell you, specifically, what today's visit is supposed to look like.&rdquo;</div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Want to see what ours looks like?</h3>
+      <p>We're glad to walk you through how Blueprint builds and updates a plan of care &mdash; before you decide anything, and with no pressure attached.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: New Jersey Division of Consumer Affairs / Board of Nursing, Best Practices for Health Care Service Firms (njconsumeraffairs.gov/nur); New Jersey Health Care Service Firm Act, N.J.S.A. 34:8-45.1 et seq., and N.J.A.C. 13:45B-13.1 et seq.; home care compliance guidance published by Chapin, Inc. (chapinc.org), based on New Jersey HCSF survey findings; 42 CFR &sect; 484.60, Medicare Conditions of Participation for Home Health Agencies (law.cornell.edu/cfr/text/42/484.60). Checked November 2026. Educational only &mdash; not medical or legal advice, and not an endorsement of any organization named. Ask your own agency for its specific plan-of-care process rather than assuming any practice described here applies to it.</p>
+</main>
+
+</body>
+</html>
