@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How NJ's JACC and Statewide Respite Care Programs Actually Work | Blueprint Home Care</title>
+  <meta name="description" content="What Jersey Assistance for Community Caregiving (JACC) and the Statewide Respite Care Program actually cover, who qualifies, and how to apply through your county ADRC." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .check-list { margin: 0 0 1.4rem; }
+    .check-item { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.88rem; color: var(--dark); margin-bottom: 0.6rem; }
+    .check-item .box { width: 13px; height: 13px; border: 1.5px solid var(--navy); border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
+    .check-item .num { font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--navy); flex-shrink: 0; min-width: 1.4em; }
+
+    .resource-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1rem 0 1.4rem; }
+    .resource-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+    .resource-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.5rem; }
+    .resource-box p:last-child { margin-bottom: 0; }
+    .resource-box .meta { font-size: 0.83rem; font-weight: 500; color: var(--navy); }
+    .resource-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>How NJ's JACC and Statewide Respite Care Programs Actually Work</h1>
+      <p>Two different state programs, often confused with each other, that can help pay for in-home help or give a family caregiver a break. Here's who qualifies and how to apply.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">Jersey Assistance for Community Caregiving (JACC) and the Statewide Respite Care Program (SRCP) both come out of New Jersey's Division of Aging Services, both start with the same phone call, and both get mixed up with each other constantly. They're not the same thing. JACC helps pay for ongoing home care for someone who clinically needs nursing-home-level support. SRCP exists for the unpaid caregiver &mdash; it pays for a break, not for everyday care.</p>
+
+      <div class="callout">
+        <span class="tag">Please read before you apply</span>
+        <p>This page is general background, not a promise of eligibility, an award amount, or legal or financial advice. Income limits, cost-share percentages, and covered services are set by the state and change periodically. Confirm the current rules with your county's Aging &amp; Disability Resource Connection (ADRC) before you plan around any figure here.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>What JACC Actually Is</h2>
+        <p>JACC is a state-funded program for New Jersey residents age 60 and older who meet New Jersey's clinical eligibility standard for nursing facility level of care &mdash; generally, needing hands-on help with at least three activities of daily living, such as bathing, toileting, dressing, transferring, or getting around &mdash; but who want to keep living at home instead of moving to a facility.</p>
+        <p>That clinical determination isn't self-reported. New Jersey's Office of Community Choice Options (OCCO), or an assessor from a PACE organization or your county ADRC, administers a standardized evaluation called the NJ Choice assessment to decide whether someone meets nursing facility level of care under N.J.A.C. 8:85-2.1. The assessment scores what you actually do for yourself day to day, not what you could theoretically manage.</p>
+        <p>JACC is specifically for people in this situation who are <em>not</em> already enrolled in Medicaid or NJ FamilyCare's Managed Long Term Services and Supports (MLTSS) program &mdash; it's a bridge for people who need that level of care but haven't gone the Medicaid route.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What JACC Covers</h2>
+        <p>Depending on your county and your care plan, JACC can help pay for:</p>
+        <ul>
+          <li>Care management to help build and adjust the plan</li>
+          <li>A home health aide or personal care assistance</li>
+          <li>Homemaker-type help, like light housekeeping</li>
+          <li>Home-delivered meals</li>
+          <li>Respite care</li>
+          <li>Home modifications for accessibility and a Personal Emergency Response System (PERS)</li>
+          <li>Chore services and some special medical equipment or supplies</li>
+        </ul>
+        <p>JACC carries an income-based copay rather than a flat fee or a hard income cutoff, and the exact services authorized come out of your individual care plan &mdash; not every participant gets every service on this list. Ask your county ADRC what your specific copay and care plan would look like.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What the Statewide Respite Care Program Actually Is</h2>
+        <p>SRCP isn't aimed at the person receiving care &mdash; it's built around giving their unpaid caregiver a break. To qualify, the care recipient needs a documented functional impairment and needs to be a New Jersey resident cared for by an uncompensated caregiver age 18 or older (most commonly a family member).</p>
+        <p>Covered respite options can include adult day care, an in-home respite aide, companion services, a brief overnight or short-term facility stay, or a supervised camp-style respite program, depending on what your county's program offers and what fits your situation.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What SRCP Costs</h2>
+        <p>SRCP uses a sliding-scale cost share, from 0% up to 25% of the cost of services, based on the care recipient's (and spouse's, if married) income. As of 2026, New Jersey's published program guidance lists a monthly gross income limit of $2,982 for an individual and $5,964 for a couple, with asset limits of $40,000 and $60,000 respectively &mdash; but these figures are reviewed and adjusted by the state, so verify the current numbers with your county ADRC rather than relying on this page for an exact figure by the time you apply.</p>
+        <p>There's also a limit on how much respite service the program will cover per person per year. Ask your county program coordinator for the current annual limit when you apply &mdash; it's set and adjusted at the program level rather than published in one place families can easily check themselves.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>How to Apply to Either Program</h2>
+        <div class="check-list">
+          <div class="check-item"><span class="num">1.</span>Call New Jersey's Aging &amp; Disability Resource Connection at 1-877-222-3737, or contact your county's Area Agency on Aging/ADRC office directly. One call covers screening for both JACC and SRCP, along with other state aging programs.</div>
+          <div class="check-item"><span class="num">2.</span>For JACC, expect a NJ Choice functional assessment to establish nursing facility level of care. Gather a list of current diagnoses, medications, and the daily tasks your loved one needs help with before that appointment.</div>
+          <div class="check-item"><span class="num">3.</span>For SRCP, be ready to document the care recipient's functional impairment and the caregiving relationship, plus household income and asset information for the cost-share calculation.</div>
+          <div class="check-item"><span class="num">4.</span>Ask directly what your county's current income limits, copay amounts, and service caps are &mdash; they vary by program and change periodically, and your ADRC intake worker will have the current numbers.</div>
+          <div class="check-item"><span class="num">5.</span>If you're turned down or told you don't qualify, ask why in writing. Clinical level-of-care denials can be appealed, and an ADRC worker or a county veteran/aging caseworker can tell you what that process looks like for your situation.</div>
+        </div>
+      </section>
+
+      <div class="resource-box">
+        <h3>NJ Aging &amp; Disability Resource Connection (ADRC)</h3>
+        <p>Statewide, single point of entry for benefits screening and referrals, including JACC and SRCP intake, in every county.</p>
+        <p class="meta"><a href="tel:8772223737">1-877-222-3737</a> &middot; <a href="https://www.nj.gov/humanservices/doas/" target="_blank" rel="noopener">nj.gov/humanservices/doas</a></p>
+      </div>
+
+      <div class="quote-box">&ldquo;One of these programs pays for the care. The other pays for your own rest. Most families only ever ask about the first one.&rdquo;</div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Also ask</h3>
+      <p>Your county ADRC which of these programs &mdash; or which other state program, like a Medicaid waiver &mdash; actually fits your situation; eligibility rules and covered services can shift from what's described here. If you'd like to talk through how either program might fit alongside private-pay home care, we're glad to have that conversation with no pressure attached.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: NJ Department of Human Services, Division of Aging Services &mdash; nj.gov/humanservices/doas/services/a-k/jacc/, nj.gov/humanservices/doas/services/q-z/srcp/; N.J.A.C. 8:85-2.1 (nursing facility level-of-care criteria); NJ Division of Medical Assistance &amp; Health Services materials on the NJ Choice assessment and the Office of Community Choice Options (OCCO); NJ Aging &amp; Disability Resource Connection. Income and asset figures reflect state program guidance as discussed in 2026 &mdash; verify current limits, copays, and covered services with your county ADRC before applying. Educational only &mdash; not legal or financial advice, and not a guarantee of eligibility.</p>
+</main>
+
+</body>
+</html>
