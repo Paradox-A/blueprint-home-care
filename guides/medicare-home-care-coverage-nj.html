@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Medicare Does &mdash; and Doesn&rsquo;t &mdash; Cover for Home Care | Blueprint Home Care</title>
+  <meta name="description" content="Medicare's home health benefit and private-pay non-medical home care are governed by completely different rules. Here's exactly where the line falls, and why." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1B3550; --sage:  #7A9E8A; --cream: #F8F4EE; --tan:   #C4A678;
+      --dark:  #2C2C2C; --mid:   #5A5A5A; --white: #FFFFFF;
+    }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--cream); font-weight: 300; line-height: 1.75; }
+
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(27, 53, 80, 0.97); backdrop-filter: blur(8px); }
+    nav a.nav-logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.nav-logo img { height: 70px; width: auto; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-back:hover { color: var(--tan); }
+
+    main { max-width: 780px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+    .toolbar { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .print-btn { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--tan); color: var(--white); border: none; border-radius: 2px; padding: 0.8rem 1.6rem; cursor: pointer; }
+    .print-btn:hover { background: #b8966a; }
+
+    .guide-sheet { background: var(--white); border-radius: 2px; box-shadow: 0 12px 32px rgba(27,53,80,0.1); overflow: hidden; }
+    .guide-header { background: var(--navy); color: var(--white); padding: 3.2rem 3rem 2.8rem; text-align: center; }
+    .guide-eyebrow { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--tan); font-weight: 500; margin-bottom: 1rem; }
+    .guide-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: 1rem; }
+    .guide-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; max-width: 48ch; margin: 0 auto; font-style: italic; line-height: 1.7; }
+
+    .content { padding: 2.6rem 3rem 1rem; }
+    .lede { font-size: 0.92rem; color: var(--mid); margin-bottom: 2.2rem; padding: 1.2rem 1.4rem; background: var(--cream); border-left: 3px solid var(--sage); }
+
+    section.chapter { margin-bottom: 2.4rem; }
+    section.chapter h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--tan); }
+    section.chapter h3 { font-size: 0.85rem; font-weight: 600; color: var(--sage); letter-spacing: 0.02em; margin: 1rem 0 0.4rem; }
+    section.chapter p { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.8rem; }
+    section.chapter ul { margin: 0 0 0.9rem 1.3rem; }
+    section.chapter li { font-size: 0.88rem; color: var(--dark); margin-bottom: 0.5rem; }
+
+    .quote-box {
+      background: var(--cream); border-left: 3px solid var(--tan); padding: 1.2rem 1.4rem; margin: 1rem 0;
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--navy);
+    }
+
+    .callout {
+      background: #FBF3EE; border-left: 3px solid #B4502A; padding: 1.1rem 1.3rem; margin: 1rem 0;
+    }
+    .callout p { font-size: 0.86rem; color: var(--mid); margin-bottom: 0; }
+    .callout .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4502A; display: block; margin-bottom: 0.5rem; }
+
+    .resource-box { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.3rem 1.5rem; margin: 1rem 0 1.4rem; }
+    .resource-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+    .resource-box p { font-size: 0.87rem; color: var(--mid); margin-bottom: 0.5rem; }
+    .resource-box p:last-child { margin-bottom: 0; }
+    .resource-box .meta { font-size: 0.83rem; font-weight: 500; color: var(--navy); }
+    .resource-box a { color: var(--navy); font-weight: 600; }
+
+    .guide-closing { background: var(--cream); padding: 2.2rem 3rem 2.8rem; border-top: 1px solid #E8E2D9; }
+    .guide-closing h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.7rem; }
+    .guide-closing p { font-size: 0.87rem; color: var(--mid); line-height: 1.8; max-width: 62ch; margin-bottom: 1rem; }
+    .guide-closing .contact { display: flex; flex-wrap: wrap; gap: 0.3rem 1.5rem; font-size: 0.83rem; font-weight: 500; color: var(--navy); margin-top: 0.6rem; }
+    .guide-closing .contact a { color: var(--navy); text-decoration: none; }
+    .guide-closing .contact a:hover { color: var(--sage); }
+    .guide-closing .cert { font-size: 0.7rem; color: var(--mid); margin-top: 0.9rem; font-style: italic; }
+
+    .footer-source { text-align: center; font-size: 0.7rem; color: var(--mid); padding: 1.2rem 2rem 0; }
+    .footer-source a { color: var(--mid); }
+
+    @media print {
+      nav, .toolbar, .footer-source { display: none; }
+      body { background: #fff; }
+      .guide-sheet { box-shadow: none; }
+      section.chapter { break-inside: avoid; }
+      @page { size: letter; margin: 0.5in; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 2rem 1rem 3rem; }
+      .content, .guide-closing, .guide-header { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="Blueprint Home Care" /></a>
+  <a href="../resources.html" class="nav-back">&larr; Back to Resources</a>
+</nav>
+
+<main>
+  <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+
+  <div class="guide-sheet">
+    <div class="guide-header">
+      <p class="guide-eyebrow">Free Guide &middot; Blueprint Home Care</p>
+      <h1>What Medicare Does &mdash; and Doesn&rsquo;t &mdash; Cover for Home Care</h1>
+      <p>&ldquo;Home care&rdquo; means two very different things under Medicare rules. Here's exactly where the line falls, and why it catches so many families by surprise.</p>
+    </div>
+
+    <div class="content">
+      <p class="lede">A lot of the calls we get start the same way: a family assumed Medicare was already paying for a home health aide, or would start to once a doctor said it was needed. Almost always, it isn't going to. That's not a loophole or a mistake &mdash; it's how the benefit was built. Knowing the actual rule before you need it means one less surprise during an already hard week.</p>
+
+      <div class="callout">
+        <span class="tag">Before you read further</span>
+        <p>This guide explains Original Medicare's home health benefit in general terms. It is not medical, legal, or financial advice, and coverage decisions depend on your specific case. Confirm anything here against Medicare.gov, 1-800-MEDICARE, or your own plan before relying on it &mdash; and bring any clinical question to your doctor, not to this page.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>Two Different Things Called &ldquo;Home Care&rdquo;</h2>
+        <p><strong>Skilled home health care</strong> is a Medicare benefit: short-term, physician-ordered nursing or therapy visits aimed at a specific medical goal, like recovering from surgery or managing a new diagnosis. <strong>Non-medical home care</strong> &mdash; what Blueprint provides &mdash; is ongoing help with the tasks of daily living: bathing, dressing, light housekeeping, meal preparation, transportation, medication reminders, and companionship. It isn't ordered by a doctor and it isn't a Medicare benefit at all. In New Jersey, it's almost always paid for privately, hour by hour.</p>
+        <p>Both kinds of help can happen in the same home, for the same person, at the same time &mdash; a visiting nurse a few times a week alongside a private-pay aide the other days. The confusion usually starts because both get called &ldquo;home care,&rdquo; and only one of them is a Medicare benefit.</p>
+      </section>
+
+      <section class="chapter">
+        <h2>What It Takes to Qualify for Medicare's Home Health Benefit</h2>
+        <p>Medicare's own coverage page sets out specific conditions, and all of them generally have to be met:</p>
+        <ul>
+          <li><strong>You must be homebound.</strong> Medicare's definition: you don't leave home often, or you leave only for a short time for health care, religious services, adult day care, or other infrequent occasions.</li>
+          <li><strong>A doctor must certify your need, in person.</strong> A physician or allowed practitioner has to assess you face-to-face before certifying that home health services are needed.</li>
+          <li><strong>The skilled care itself must be part-time or &ldquo;intermittent.&rdquo;</strong> Medicare's own language is direct about this: you are not eligible for the home health benefit if you need more than part-time or intermittent skilled nursing care.</li>
+          <li><strong>The agency must be Medicare-certified.</strong> Not every home care or home health agency is; ask directly.</li>
+        </ul>
+      </section>
+
+      <div class="quote-box">&ldquo;We consider a person confined to home if they don't leave their home often, or if they leave only for a short time for health care services, religious services, adult day care, or other unique or infrequent events.&rdquo; &mdash; Medicare.gov, on the homebound requirement</div>
+
+      <section class="chapter">
+        <h2>What's Actually Covered When You Qualify</h2>
+        <p>Once certified, Medicare's home health benefit can cover skilled nursing care, physical therapy, occupational therapy, speech-language pathology, and medical social services &mdash; all part-time or intermittent, all tied to the physician-ordered plan.</p>
+        <div class="callout" style="background: var(--cream); border-left-color: var(--sage);">
+          <span class="tag" style="color: var(--navy);">The home health aide benefit is narrower than it sounds</span>
+          <p>Medicare can also cover a home health aide &mdash; but only part-time or intermittent, and only when you're also receiving skilled nursing care or physical, occupational, or speech therapy at the same time. It is not a standalone benefit for ongoing bathing or dressing help on its own, and coverage generally ends once the skilled care that justified it ends. That's the single most common misunderstanding we hear from families.</p>
+        </div>
+      </section>
+
+      <section class="chapter">
+        <h2>What Medicare Does Not Pay For</h2>
+        <p>Medicare.gov lists these explicitly among the things the home health benefit does not cover:</p>
+        <ul>
+          <li>24-hour-a-day care at home</li>
+          <li>Home meal delivery</li>
+          <li>Homemaker services, like shopping and cleaning, unrelated to your care plan</li>
+          <li>Custodial or personal care &mdash; help with daily activities like bathing, dressing, or using the bathroom &mdash; <em>when that's the only care you need</em></li>
+        </ul>
+        <p>That last line is the one that matters most for most families: ongoing, standalone help with daily living &mdash; without a skilled nursing or therapy need alongside it &mdash; simply falls outside what Original Medicare's home health benefit was built to pay for, no matter how clearly a doctor agrees it's needed.</p>
+      </section>
+
+      <div class="resource-box">
+        <h3>If You Have a Medicare Advantage Plan</h3>
+        <p>Medicare Advantage (Part C) plans must cover at least everything Original Medicare covers, including home health care under the same basic rules above. Some plans also offer limited supplemental benefits beyond that &mdash; the specifics vary by plan and change from year to year, so ask your plan directly, or check its Evidence of Coverage, rather than assuming a benefit applies.</p>
+      </div>
+
+      <section class="chapter">
+        <h2>Where That Leaves Most Families</h2>
+        <p>If a loved one needs ongoing, non-medical help &mdash; and doesn't currently need skilled nursing or therapy alongside it &mdash; that help is privately paid in most cases, the way Blueprint's services are. Two other avenues are worth knowing about before you assume there's no public option at all:</p>
+        <ul>
+          <li><strong>NJ FamilyCare's Managed Long Term Services and Supports (MLTSS)</strong> is New Jersey's Medicaid long-term care program, and it's a genuinely different program from Medicare &mdash; income- and asset-tested, administered by the state. For those who qualify, it can cover ongoing Personal Care Assistant and home health aide services. Eligibility and the application process are handled through the state, not through Medicare.</li>
+          <li><strong>New Jersey's Aging &amp; Disability Resource Connection (ADRC)</strong>, at 1-877-222-3737, is a reasonable single starting point for a benefits screening that covers MLTSS and other state programs in one call. Our <a href="trusted-nj-caregiver-resources.html">guide to trusted NJ caregiver resources</a> has more detail on that call and what else it can connect you to.</li>
+        </ul>
+      </section>
+
+      <section class="chapter" style="margin-bottom:0;">
+        <h2>Questions Worth Asking</h2>
+        <ul>
+          <li>If a loved one is currently receiving Medicare-covered home health, what happens to aide visits once the skilled nursing or therapy episode ends?</li>
+          <li>Has anyone done a Medicaid/MLTSS screening, and would income or assets make that worth pursuing?</li>
+          <li>If there's a Medicare Advantage plan involved, what does its Evidence of Coverage actually say about home-based supplemental benefits?</li>
+          <li>For the non-medical help that isn't covered either way, what would ongoing private-pay care actually look like for this family?</li>
+        </ul>
+      </section>
+
+      <div class="quote-box">&ldquo;Medicare was built to cover a medical episode, not an ongoing need for help at home. Once you see it that way, the rules stop feeling arbitrary &mdash; and you can plan around them instead of being surprised by them.&rdquo;</div>
+    </div>
+
+    <div class="guide-closing">
+      <h3>Trying to figure out what's next?</h3>
+      <p>We're glad to talk through where Medicare, Medicaid, and private-pay care each fit for your family's specific situation &mdash; no pressure, and no obligation to use Blueprint to get a straight answer.</p>
+      <div class="contact">
+        <a href="tel:+19733700964">(973) 370-0964</a>
+        <a href="mailto:hello@blueprinthomecarenj.com">hello@blueprinthomecarenj.com</a>
+      </div>
+      <p class="cert">Blueprint Home Care &middot; Registered NJ Health Care Service Firm HP0441400</p>
+    </div>
+  </div>
+
+  <p class="footer-source">Sources: Medicare.gov, &ldquo;Home health services&rdquo; coverage page and &ldquo;How Medicare Advantage Plans Work&rdquo;; 42 CFR &sect; 484.60, Medicare Home Health Conditions of Participation (law.cornell.edu/cfr/text/42/484.60); New Jersey Department of Human Services, Division of Medical Assistance and Health Services, Managed Long Term Services and Supports (nj.gov/humanservices/dmahs); NJ Aging &amp; Disability Resource Connection (nj.gov/humanservices/doas). Checked November 2026. Educational only &mdash; not medical, legal, or financial advice, and not a guarantee of coverage in any specific case.</p>
+</main>
+
+</body>
+</html>
